@@ -287,4 +287,10 @@
       code = #{code,jdbcType=VARCHAR}
     where uid = #{uid,jdbcType=VARCHAR}
   </update>
+  <select id="" parameterType="com.wu.store.bean.User" resultType="com.wu.store.bean.User">
+    select
+    <include refid="Base_Column_List" />
+    from user where email=#{email} and password=#{password}
+  </select>
+
 </mapper>

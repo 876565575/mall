@@ -1,18 +1,14 @@
 package com.wu.store.service;
 
 import com.wu.store.bean.User;
-import com.wu.store.dao.UserMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserService
+public interface UserService
 {
-	@Autowired
-	private UserMapper userMapper;
+	int addUser(User user);
 
-	public void addUser(User user)
-	{
-		userMapper.insert(user);
-	}
+	User login(User user);
+
+	int checkEmail(String email);
 }

@@ -135,6 +135,7 @@ font {
 			      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
 			    </div>
 			  </div>
+			 
 			 <div class="form-group">
 			    <label for="usercaption" class="col-sm-2 control-label">姓名</label>
 			    <div class="col-sm-6">
@@ -157,20 +158,17 @@ font {
 			    <div class="col-sm-6">
 			      <input type="date" class="form-control" id="birthdat" >		      
 			    </div>
-			  </div>
-			  
-			  <div class="form-group">
+			  </div>	
+			   <div class="form-group">
 			    <label for="date" class="col-sm-2 control-label">验证码</label>
 			    <div class="col-sm-3">
-			      <input type="text" class="form-control"  >
-			      
+			      <input type="text" class="form-control"  >			      
 			    </div>
 			    <div class="col-sm-2">
-			    <img src="./image/captcha.jhtml"/>
+			    <a href="#">发送邮箱验证码</a>
 			    </div>
 			    
 			  </div>
-			 
 			  <div class="form-group">
 			    <div class="col-sm-offset-2 col-sm-10">
 			      <input type="submit"  width="100" value="注册" name="submit" border="0"
@@ -216,7 +214,8 @@ font {
 	user.password = $("#inputPassword3").val().trim();
 	user.name = $("#usercaption").val().trim();
 	user.email = $("#inputEmail3").val().trim();
-	user.birthday = $("#inputEmail3").val().trim();
+	user.birthday = $("#birthdat").val().trim();
+	user.sex = $(".opt")
 </script>
 </html>
 
